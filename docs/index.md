@@ -5,7 +5,7 @@ hero:
   desc: 📚 frontend-guidebook Record the process of learning the front end.
   actions:
     - text: Learning
-      link: /components
+      link: /base
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 基础体系
