@@ -5,8 +5,8 @@ nav:
 group:
   title: 概况
   order: 1
-title: 编译流程
-order: 2
+title: Babel的AST
+order: 3
 ---
 
 # babel的AST
