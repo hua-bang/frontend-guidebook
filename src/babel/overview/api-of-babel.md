@@ -1,11 +1,11 @@
 ---
 nav:
-  title: Babel
+  title: babel
   order: 7
 group:
   title: 概况
   order: 1
-title: Babel的API
+title: babel的api
 order: 4
 ---
 
