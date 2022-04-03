@@ -6,7 +6,7 @@ group:
   title: 案例
   order: 2
 title: 自动埋点
-order: 2
+order: 1
 ---
 
 # 自动埋点
