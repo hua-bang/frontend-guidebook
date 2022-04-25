@@ -157,7 +157,7 @@ app.listen(3000, () => {
 2. `server`将请求会经过中间件。
 3. `Middleware`会根据文件类型进行解析并响应。
 
-![vue-dev-serve.drawio (1)](../../assets/vue-dev-serve.drawio (1).png)
+![vue-dev-serve.drawio](../../assets/vue-dev-serve.drawio.png)
 
 上方其实就是`vue-dev-server`的简单流程了，实质上是`拦截请求`，`并根据特定的文件类型进行响应`。
 
@@ -394,6 +394,20 @@ async function loadPkg(pkg) {
 这里目前仅对`vue`做了处理，没错，这里其他的`npm`包都会报错。
 因为下方需要检测`npm`是否支持`esModule`。（这个逻辑有点难判断）。
 
+## 扩展
+
+下面，个人也在项目的基础上进行了一点改造，使用了`babel`、`react`、`react-dom`去支持了`tsx`的写法，同时也对项目结构有所调整。
+
+但由于里面存在部分`hack`写法，这里就只展示效果图。
+
+有兴趣的话，可以看看[源码](https://github.com/hua-bang/vue-dev-server)哦。
+
+![image-20220425145342909](../../assets/image-20220425145342909.png)
+
+![image-20220425145400602](../../assets/image-20220425145400602.png)
+
+![image-20220425145427831](../../assets/image-20220425145427831.png)
+
 ## 总结
 
 我们这里分析了[vue-dev-server](https://github.com/vuejs/vue-dev-server)的基本流程和原理，这里有很多东西值得我们学习。
@@ -413,4 +427,5 @@ async function loadPkg(pkg) {
 ## 参考
 
 - [尤雨溪几年前开发的“玩具 vite”，才100多行代码，却十分有助于理解 vite 原理](https://juejin.cn/post/7021306258057592862)
-- [source code](https://github.com/vuejs/vue-dev-server)
+- [vue-dev-server](https://github.com/vuejs/vue-dev-server)
+- [source code](https://github.com/hua-bang/vue-dev-server)
