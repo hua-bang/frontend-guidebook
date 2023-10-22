@@ -11,6 +11,8 @@
 /dist
 /docs-dist
 
+/.obsidian
+
 # misc
 .DS_Store
 
